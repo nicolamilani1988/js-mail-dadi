@@ -31,27 +31,42 @@
     <!-- ESERCIZIO DADI VERSIONE IF -->
     <script type="text/javascript">
 
-      var randomUserDice = Math.floor(Math.random() * 6)+1;
-      var randomCpuDice = Math.floor(Math.random() * 6)+1;
-      var result = document.getElementById("title");
+      // var randomUserDice = Math.floor(Math.random() * 6)+1;
+      // var randomCpuDice = Math.floor(Math.random() * 6)+1;
+      // var result = document.getElementById("title");
+      //
+      // console.log(randomUserDice,randomCpuDice);
+      //
+      //
+      // if (randomUserDice > randomCpuDice) {
+      //   console.log("VINCE USER");
+      //   var message = "sei un ganzo";
+      //
+      // } else if (randomUserDice < randomCpuDice) {
+      //   console.log("VINCE CPU");
+      //   var message = "fai cagare";
+      //
+      // } else {
+      //   console.log("PAREGGIO");
+      //   var message = "pareggio, devi ritirare";
+      // }
+      //
+      // result.innerHTML = message;
 
-      console.log(randomUserDice,randomCpuDice);
+    </script>
 
 
-      if (randomUserDice > randomCpuDice) {
-        console.log("VINCE USER");
-        var message = "sei un ganzo";
+    <!-- ESERCIZIO DATI - CICLO / FINE CICLO  -->
+    <script type="text/javascript">
 
-      } else if (randomUserDice < randomCpuDice) {
-        console.log("VINCE CPU");
-        var message = "fai cagare";
+    var randomUserDice = Math.floor(Math.random() * 6)+1;
+    var randomCpuDice = Math.floor(Math.random() * 6)+1;
 
-      } else {
-        console.log("PAREGGIO");
-        var message = "pareggio, devi ritirare";
-      }
+    for (var i = randomUserDice; i < randomCpuDice; i++) {
+       console.log("VINCE CPU");
+     }
 
-      result.innerHTML = message;
+    console.log("VINCE USER");
 
     </script>
 
