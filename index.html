@@ -18,10 +18,10 @@
       var result = document.getElementById("title");
       var message = "mail non verificata";
 
-      console.log(userMail);
 
       for (var i = 0; i < arrMail.length; i++) {
-        var element = arrMail[i]
+        var element = arrMail[i];
+
 
         if (userMail == element){
           console.log("mail verificata");
@@ -38,8 +38,8 @@
     <!-- ESERCIZIO DADI VERSIONE IF -->
     <script type="text/javascript">
 
-      // var randomUserDice = Math.floor(Math.random() * 6)+1;
-      // var randomCpuDice = Math.floor(Math.random() * 6)+1;
+      // var randomUserDice = Math.ceil(Math.random() * 6);
+      // var randomCpuDice = Math.ceil(Math.random() * 6);
       // var result = document.getElementById("title");
       //
       // console.log(randomUserDice,randomCpuDice);
@@ -47,11 +47,11 @@
       //
       // if (randomUserDice > randomCpuDice) {
       //   console.log("VINCE USER");
-      //   var message = "sei un ganzo";
+      //   message = "sei un ganzo";
       //
       // } else if (randomUserDice < randomCpuDice) {
       //   console.log("VINCE CPU");
-      //   var message = "fai cagare";
+      //   message = "fai cagare";
       //
       // } else {
       //   console.log("PAREGGIO");
@@ -70,7 +70,8 @@
       // var randomCpuDice = Math.ceil(Math.random() * 6);
       // var result = document.getElementById("title");
       //
-      // console.log(randomUserDice,randomCpuDice, "VINCE USER");
+      // console.log(randomUserDice,randomCpuDice);
+      // console.log("VINCE USER");
       // var message = "Vince USER";
       //
       // for (var i = randomUserDice; i < randomCpuDice; i++) {
