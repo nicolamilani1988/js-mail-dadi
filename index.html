@@ -16,21 +16,23 @@
       var userMail = prompt("Dimmi la tua mail");
       var arrMail = ["nicola1@gmail.com" , "nicola2@gmail.com" , "nicola3@gmail.com" , "nicola4@gmail.com" , "nicola5@gmail.com"];
       var result = document.getElementById("title");
-      var message = "mail non verificata";
+      var flag = false;
 
-
-      for (var i = 0; i < arrMail.length; i++) {
+      for (var i = 0; i < arrMail.length; i++) { //posso aggiungere condizione && flag=false; per farlo uscire dal ciclo quando trova la mail
         var element = arrMail[i];
 
-
         if (userMail == element){
-          console.log("mail verificata");
-          var message = "mail verificata";
+          flag = true;
+          break; //altro metodo per uscire da ciclo al verificarsi della condiz.
+        }
+
+        if (flag){
+          result.innerHTML = "mail ok";
+        } else{
+          result.innerHTML = "mail non ok";
         }
 
       }
-
-      result.innerHTML = message;
 
     </script>
 
